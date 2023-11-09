@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Blog - Admire Softech</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      defer
+    ></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/clouds/100/technology.png"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/script.min.js"></script>
+    <script src="./assets/js/forms/requestQuoteForm.js" defer></script>
+  </head>
+
+  <body>
+    <div class="d-lg-flex">
+      <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog" role="document" style="max-width: 350px">
+          <div class="modal-content">
+            <div class="modal-header d-lg-flex">
+              <h4 class="modal-title">
+                <strong>Request A Quote Today!</strong>
+              </h4>
+              <button
+                class="btn-close"
+                type="button"
+                aria-label="Close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <form id="requestQuoteForm">
+              <div
+                class="modal-body"
+                style="margin-bottom: 0px; padding-bottom: 0px"
+              >
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="text"
+                    id="requestQuoteFormName"
+                    placeholder="Enter your name"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="tel"
+                    id="requestQuoteFormMobile"
+                    placeholder="Enter your mobile"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <input
+                    type="email"
+                    id="requestQuoteFormEmail"
+                    placeholder="Enter your email"
+                    style="width: 100%"
+                  />
+                </div>
+                <div style="margin-bottom: 15px">
+                  <select
+                    style="width: 100%; padding: 10px; color: grey"
+                    id="requestQuoteFormSelect"
+                  >
+                    <option value="default" selected="">Select Service</option>
+                    <option value="website">
+                      Website Design &amp; Development
+                    </option>
+                    <option value="seo">SEO</option>
+                    <option value="google-ads">Google Ads</option>
+                    <option value="fb&amp;insta_ads">
+                      Facebook &amp; Instagram Ads
+                    </option>
+                    <option value="linkedin_ads">LinkedIn Ads</option>
+                  </select>
+                </div>
+                <div style="margin-bottom: 15px">
+                  <textarea
+                    id="requestQuoteFormTextMessage"
+                    cols="24"
+                    style="width: 100%; padding: 10px; padding-bottom: 0px"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+              </div>
+              <div
+                class="modal-footer d-lg-flex justify-content-lg-center"
+                style="border: 0; padding-top: 0"
+              >
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  style="width: 100%; border-radius: 4px"
+                >
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative">
+      <nav
+        class="navbar navbar-expand-md sticky-top d-flex d-lg-flex justify-content-between navbar-shrink"
+        id=""
+        style="padding: 8px 0; background-color: #fff"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="/"
+            style="padding: 0; margin: 0"
+            ><img
+              src="assets/img/Admire_final-removebg-preview.png"
+              style="width: 110px" /></a
+          ><button
+            data-bs-toggle="collapse"
+            class="navbar-toggler"
+            data-bs-target="#navcol-1"
+          >
+            <span class="visually-hidden">Toggle navigation</span
+            ><span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navcol-1"
+            style="flex-grow: 0"
+          >
+            <ul
+              class="navbar-nav mx-auto d-flex align-items-center"
+              style="
+                margin-block: initial !important;
+                margin-inline: initial;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+              "
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="./services.html">Service </a>
+                  <a class="dropdown-item" href="./webDesignDevlopment.html"
+                    >Web Development</a
+                  >
+                  <a class="dropdown-item" href="./seo.html">Seo</a>
+                  <a class="dropdown-item" href="./graphicDesign.html"
+                    >Graphic Design</a
+                  >
+                  <a class="dropdown-item" href="./googleAds.html"
+                    >Google Ads</a
+                  >
+                  <a class="dropdown-item" href="./fbInstaAds.html"
+                    >Facebook Ads</a
+                  >
+                  <a class="dropdown-item" href="./instagramAds.html"
+                    >Instagram Ads</a
+                  >
+                  <a class="dropdown-item" href="./linkedinAds.html"
+                    >Linkedin Ads</a
+                  >
+                  <a class="dropdown-item" href="./googleService.html"
+                    >Google Service</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contact</a>
+              </li>
+              <li class="nav-item branding__navItem">
+                <a class="nav-link" href="branding.html">Branding</a>
+              </li>
+              <li>
+                <a
+                  href="request.html"
+                  class="shadow cta-2 mt-sm-3 mt-0 quote__button"
+                  role="button"
+                  data-bs-target="#modal-1"
+                  data-bs-toggle="modal"
+                  id="requestQuoteButton"
+                  >Request A Quote</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- <section class="branding__service--section container">
+      <div class="branding__section--content py-5">
+        <div class="branding__section--text">
+          <h1>Empower Your Brand's Story</h1>
+          <hr />
+          <h5>Unified Branding Solutions</h5>
+          <hr />
+          <h5>Seamless Multilingual Experience</h5>
+          <p>
+            Crafting a tailored multilingual experience for your brand has never
+            been more effortless. Those involved in customizing CMS solutions
+            will attest to the transformative nature of our services.
+          </p>
+          <div class="branding__section--buttons">
+            <button class="">BRAND APPS</button>
+            <button class="">WEB PRESENCE</button>
+          </div>
+          <hr />
+          <h5>Bespoke Brand Data Structures</h5>
+          <hr />
+          <p>Flexible Data Schema Tailored to Your Brand’s Needs</p>
+        </div>
+        <div class="branding__section--image">
+          <img
+            src="https://assets.telecomtv.com/assets/telecomtv/digital-advertising-15778.jpeg?w=1024 "
+            alt="Branding Services"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <section class="branding__service--section container">
+      <div class="branding__section--content py-5">
+        <div class="branding__section--text">
+          <h1>Why Consistency Matters in Branding</h1>
+          <hr />
+          <h5>Unified Branding Solutions</h5>
+          <hr />
+          <h5>Seamless Multilingual Experience</h5>
+          <p>
+            Consistency in multilingual experience is key to fostering a strong
+            brand image. Tailoring CMS solutions to seamlessly adapt to
+            different languages plays a pivotal role in connecting with diverse
+            audiences and ensuring a cohesive brand experience.
+          </p>
+          <hr />
+          <h5>Bespoke Brand Data Structures</h5>
+          <hr />
+          <p>
+            Consistent and flexible data structures are essential. Tailoring
+            data schema to match the specific needs of a brand guarantees
+            coherence and reliability in operations, fostering a unified and
+            structured approach to handling information.
+          </p>
+        </div>
+        <div class="branding__section--image">
+          <img
+            src="https://merlinone.com/wp-content/uploads/2019/01/stockfresh_5188978_brand-concept-schema-diagram_sizeXS-min.jpg"
+            alt="Branding Services"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="it__works py-5 d-flex flex-column gap-1 container justify-content-center align-items-center"
+    >
+      <h1 class="my-3">How it works</h1>
+      <p class="w-75 text-muted">
+        Consistency in branding is pivotal for establishing a strong and
+        recognizable brand identity. It ensures that your audience can easily
+        identify and connect with your brand across various touchpoints and
+        interactions.
+      </p>
+      <div class="it__works--cards">
+        <div class="it__works--card">
+          <div class="it__works--circle">1</div>
+          <h5>Uniform Brand Presentation</h5>
+          <p>
+            Presenting your brand consistently helps in creating a cohesive
+            visual identity. This coherence builds trust and recognition among
+            your audience.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">2</div>
+          <h5>Maintain Message Consistency</h5>
+          <p>
+            Consistent messaging reinforces your brand's values and ensures that
+            your audience receives a unified message, fostering a stronger
+            connection with your brand.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">3</div>
+          <h5>Building Customer Trust</h5>
+          <p>
+            Trust is nurtured through consistent experiences. Consistency in
+            brand representation across all platforms encourages customer trust
+            and loyalty.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">4</div>
+          <h5>Enhancing Brand Recognition</h5>
+          <p>
+            Brand recognition is bolstered by consistency. When your brand
+            elements remain uniform, it becomes easier for customers to identify
+            and recall your brand.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="branding__service--section container mt-5">
+      <div class="branding__section--content py-5">
+        <div class="branding__section--image">
+          <img
+            src="https://www.akgvg.com/images/Formation.jpg"
+            alt="Company Formation Services"
+          />
+        </div>
+        <div class="branding__section--text">
+          <h1>Company Formation</h1>
+          <hr />
+          <h5>Expert Consultation</h5>
+          <hr />
+          <h5>Legal & Business Entity Setup</h5>
+          <p>
+            Establishing your business is easier with our expert consultation.
+            We handle the legal and business entity setup processes efficiently.
+          </p>
+          <div class="branding__section--buttons">
+            <button class="">INCORPORATION</button>
+            <button class="">LEGAL GUIDANCE</button>
+          </div>
+          <hr />
+          <h5>Tax & Regulatory Support</h5>
+
+          <p>
+            Comprehensive assistance in tax compliance and regulatory support
+            for a hassle-free start.
+          </p>
+          <button class="expert__button">TALK TO ACCOUNTANT</button>
+        </div>
+      </div>
+    </section> -->
+    <section class="branding__service--section container mt-5">
+      <div class="branding__section--content py-5">
+        <div class="branding__section--image">
+          <img
+            src="https://www.akgvg.com/images/Formation.jpg"
+            alt="Company Formation Services"
+          />
+        </div>
+        <div class="branding__section--text">
+          <h1>Discovery's Impact on Branding</h1>
+          <hr />
+          <h5>Exploration and Understanding</h5>
+          <hr />
+          <h5>Building a Strong Foundation</h5>
+          <p>
+            Exploring your brand's core helps establish a strong foundation.
+            Understanding your brand's essence is crucial for a robust and
+            consistent identity.
+          </p>
+          <hr />
+          <h5>Alignment with Core Values</h5>
+          <p>
+            Discovering and aligning with core values ensures that your brand is
+            reflective of its principles, resonating with your audience
+            authentically.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- <section
+      class="it__works py-5 d-flex flex-column gap-1 container justify-content-center align-items-center"
+    >
+      <h1 class="my-3">How it works</h1>
+      <p class="w-75 text-muted">
+        Consistency in branding is pivotal for establishing a strong and
+        recognizable brand identity. It ensures that your audience can easily
+        identify and connect with your brand across various touchpoints and
+        interactions.
+      </p>
+      <div class="it__works--cards">
+        <div class="it__works--card">
+          <div class="it__works--circle">1</div>
+          <h5>Uniform Brand Presentation</h5>
+          <p>
+            Presenting your brand consistently helps in creating a cohesive
+            visual identity. This coherence builds trust and recognition among
+            your audience.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">2</div>
+          <h5>Maintain Message Consistency</h5>
+          <p>
+            Consistent messaging reinforces your brand's values and ensures that
+            your audience receives a unified message, fostering a stronger
+            connection with your brand.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">3</div>
+          <h5>Building Customer Trust</h5>
+          <p>
+            Trust is nurtured through consistent experiences. Consistency in
+            brand representation across all platforms encourages customer trust
+            and loyalty.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">4</div>
+          <h5>Enhancing Brand Recognition</h5>
+          <p>
+            Brand recognition is bolstered by consistency. When your brand
+            elements remain uniform, it becomes easier for customers to identify
+            and recall your brand.
+          </p>
+        </div>
+      </div>
+    </section> -->
+    <section
+      id="discover__impact"
+      class="it__works py-5 d-flex flex-column gap-1 container justify-content-center align-items-center"
+    >
+      <h1 class="my-3">Discovery's Impact on Branding</h1>
+      <p class="w-75 text-muted">
+        The discovery phase significantly influences brand development. It lays
+        the foundation for a consistent and powerful brand identity, enabling
+        audiences to establish a strong connection with your brand across
+        multiple touchpoints.
+      </p>
+      <div class="it__works--cards">
+        <div class="it__works--card">
+          <div class="it__works--circle">1</div>
+          <h5>Understanding Brand Essence</h5>
+          <p>
+            Exploring the core of your brand lays the groundwork for a cohesive
+            brand identity. This understanding fosters trust and recognition
+            among your audience.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">2</div>
+          <h5>Aligning with Core Values</h5>
+          <p>
+            Aligning your brand with its core values ensures that your brand
+            resonates authentically with its audience, strengthening the
+            connection through consistent messaging.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">3</div>
+          <h5>Building Authenticity and Trust</h5>
+          <p>
+            Building trust through consistent brand experiences fosters loyalty.
+            Consistency across platforms encourages trust, nurturing a loyal
+            customer base.
+          </p>
+        </div>
+        <div class="it__works--card">
+          <div class="it__works--circle">4</div>
+          <h5>Enhancing Brand Recognition</h5>
+          <p>
+            Consistency strengthens brand recognition. When elements remain
+            uniform, it aids in easy brand recall and identification by
+            customers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container py-5 d-flex justify-content-center align-items-center flex-column"
+    >
+      <h1>FAQ</h1>
+      <div class="accordion pt-3 w-100" id="accordionExample1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="false"
+              aria-controls="collapseOne"
+            >
+              What services do you offer for branding?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample1"
+          >
+            <div class="accordion-body">
+              Our branding services include logo design, brand strategy
+              development, brand identity creation, brand messaging, and brand
+              positioning.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne-two">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne-two"
+              aria-expanded="false"
+              aria-controls="collapseOne-two"
+            >
+              How can branding impact a business?
+            </button>
+          </h2>
+          <div
+            id="collapseOne-two"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne-two"
+            data-bs-parent="#accordionExample1"
+          >
+            <div class="accordion-body">
+              Effective branding can positively influence customer perception,
+              loyalty, and recognition. It can differentiate your business from
+              competitors, build trust, and support business growth.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne-three">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne-three"
+              aria-expanded="false"
+              aria-controls="collapseOne-three"
+            >
+              What are the key factors in successful website development?
+            </button>
+          </h2>
+          <div
+            id="collapseOne-three"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne-three"
+            data-bs-parent="#accordionExample1"
+          >
+            <div class="accordion-body">
+              Key factors in successful website development include user
+              experience, responsive design, fast loading times, high-quality
+              content, mobile optimization, and security features.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne-four">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne-four"
+              aria-expanded="false"
+              aria-controls="collapseOne-four"
+            >
+              How long does it take to deliver a website?
+            </button>
+          </h2>
+          <div
+            id="collapseOne-four"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne-four"
+            data-bs-parent="#accordionExample1"
+          >
+            <div class="accordion-body">
+              The time to deliver a website can vary significantly based on the
+              project's complexity, features, and requirements. It typically
+              ranges from a few weeks for a simple website to several months for
+              more complex, custom-built sites.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne-five">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne-five"
+              aria-expanded="false"
+              aria-controls="collapseOne-five"
+            >
+              How long does SEO and marketing work take to show results?
+            </button>
+          </h2>
+          <div
+            id="collapseOne-five"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingOne-five"
+            data-bs-parent="#accordionExample1"
+          >
+            <div class="accordion-body">
+              SEO and marketing efforts can take several months to show
+              noticeable results. The timeframe for achieving significant
+              outcomes varies based on factors such as competition, industry,
+              and the strategies implemented. It often requires continuous
+              efforts and monitoring to see substantial improvements.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container py-4 py-lg-5">
+        <div class="row gy-5">
+          <div
+            class="col-12 col-lg-3 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start order-lg-last"
+          >
+            <img src="assets/img/white__logo.jpg" style="width: 155px" />
+            <p class="" style="margin-top: 20px">
+              We help businesses succeed online through innovative marketing and
+              design solutions.
+            </p>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center align-items-centertext-lg-start d-flex flex-column order-last"
+          >
+            <h3 class="fs-6 fw-bold text-white">Company</h3>
+            <ul class="list-unstyled d-flex flex-column align-items-center">
+              <li><a href="./careers.html" class="text-white">Careers</a></li>
+              <li>
+                <a href="./termsService.html" class="text-white">T&amp;S</a>
+              </li>
+              <li>
+                <a href="./disclaimer.html" class="text-white">Disclaimer</a>
+              </li>
+              <li>
+                <a href="./privacyPolicy.html" class="text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column align-items-center order-last"
+          >
+            <h3 class="fs-6 fw-bold" class="text-white">Quick Links</h3>
+            <ul class="list-unstyled d-flex flex-column align-items-center">
+              <li>
+                <a href="" class="text-white">Consistency Matters</a>
+              </li>
+              <li>
+                <a href="" class="text-white">Discover Impact</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex align-items-center flex-column order-last"
+          >
+            <h3 class="fs-6 fw-bold" class="text-white">Services</h3>
+            <ul
+              class="list-unstyled d-flex flex-column justify-content-center align-items-center"
+            >
+              <li>
+                <a href="./seo.html" class="text-white"
+                  >Search Engine Optimization</a
+                >
+              </li>
+              <li>
+                <a href="./webDesignDevlopment.html" class="text-white"
+                  >Web design &amp;&nbsp;Development</a
+                >
+              </li>
+              <li>
+                <a href="./graphicDesign.html" class="text-white"
+                  >Graphic Designing</a
+                >
+              </li>
+              <li>
+                <a href="googleService.html" class="text-white"
+                  >Google Services</a
+                >
+              </li>
+              <li>
+                <a href="./instagramAds.html" class="text-white"
+                  >Instagram Ads</a
+                >
+              </li>
+              <li>
+                <a href="./fbInstaAds.html" class="text-white">Facebook Ads</a>
+              </li>
+
+              <li>
+                <a href="linkedinAds.html" class="text-white">LinkedIn Ads</a>
+              </li>
+              <li>
+                <a href="./googleAds.html" class="text-white">Google Ads</a>
+              </li>
+              <li><a href="./branding.html" class="text-white">Branding</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="d-flex justify-content-between align-items-center pt-3">
+          <p class="mb-0" class="text-white">Copyright © 2023 Admire Softech</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a
+                href="https://www.facebook.com/people/Admire-Holidays/100090809996697/"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-facebook"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/HolidaysAd53932">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-twitter"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/admireholidays_official/">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  class="bi bi-instagram"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+  </body>
+</html>

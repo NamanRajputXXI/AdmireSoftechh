@@ -445,10 +445,107 @@ span.img-text:hover {
   flex-direction: column;
   background-repeat: no-repeat;
 }
+.web__presence{
+ background-color: #041569;
+ color: #fff;
+ padding: 40px 0;
+}
+.web__presence--text{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.web__presence--text h1{
+  font-size: 60px;
+  font-weight: 900;
+}
+.web__presence--content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.web__presence--text p{
+  font-size: 20px;
+}
+.tools__grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+width: 100%;
+
+}
+.tools__grid--boxes{
+  height: 300px;
+  width: 100%px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 30px
+  
+}
+.tools__grid--boxes h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+.grid__box--blue{
+  background-color: #041569;
+  color: #fff;
+  gap: 10px;
+  font-size: 30px;
+}
+.grid__box--white{
+  color: #041569;
+}
+.tools__container--serve{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 600px;
+  background-color: #FFC229;
+  color: #041569;
+  font-weight: 700;
+  font-size: 25px;
+}
+.tools__container--serve h1{
+  font-size: 50px;
+  font-weight: 900;
+  color: #041569;
+}
+.webPresence__features{
+  
+ color: #041569;
+ font-weight: 900;
+
+  padding: 50px 10px;
+
+  
+  font-size: 40px;
+}
+.webPresence__feature h5{
+  font-size: 30px;
+  font-weight: 900;
+
+}
+.webPresence__feature--grid
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  
+}
 .hero__section--heading{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
 }
 .hero__section--content{
   align-items: center;
@@ -661,13 +758,14 @@ span.img-text:hover {
 .branding__section--content{
   display: flex;
   width: 100%;
- 
+  height: fit-content;
+
   justify-content: center;
   align-items: center;
 }
 
 .branding__section--text{
-  flex: 0.6;
+  flex: 0.5;
   height: 550px;
 
   display: flex;
@@ -675,6 +773,22 @@ span.img-text:hover {
   background-color: #041569;
   color: #fff;
   padding: 20px 30px;
+}
+.branding__section--form{
+  height: 550px;
+  display: flex;
+  justify-content: center;
+padding: 20px ;
+  flex: 0.5;
+}
+.branding__section--form form{
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: space-between;
+}
+.branding__section--form form input{
+  width: 400px;
 }
 .branding__section--text h1{
   font-size: 40px;
@@ -733,9 +847,95 @@ span.img-text:hover {
   color: #041569;
   transition: 0.3s;
 }
+.it__works--cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 10px;
+  gap: 20px;
+ 
+  }
+.it__works--card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+  padding: 15px ;
+  outline: none;
+  background-color: #041569;
+  color: #fff;
+}
+.it__works--circle{
+  background-color: #fff;
+  color: #041569;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
 
 
 @media (max-width: 1024px) {
+ 
+  .webPresence__feature--grid
+{
+
+  grid-template-columns: repeat(2, 1fr);
+ gap: 40px;
+}
+  .tools__container--serve{
+   
+    width: 350px;
+    height: 900px;
+    
+  }
+  .tools__container--serve h1{
+    font-size: 40px;
+    font-weight: 900;
+    color: #041569;
+  }
+  .tools__grid{
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ 
+  .web__presence{
+    background-color: #041569;
+    color: #fff;
+    padding: 40px 0;
+   }
+   .facebook__box{
+    background-color: #041569;
+    color: #fff;
+   }
+   .linkedin__box{
+    background-color: #fff;
+    color: #041569;
+   }
+
+   
+   .web__presence--text h1{
+     font-size: 50px;
+     
+   }
+   .web__presence--text p{
+     font-size: 18px;
+   }
+   .web__presence--content{
+    flex-direction: column;
+gap: 30px;
+   }
+  .it__works--cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 10px;
+    gap: 20px;
+   
+    }
   .details__text--homepage{
     font-size: 20px;
   }
@@ -746,13 +946,29 @@ span.img-text:hover {
     flex-direction: column;
 
   }
-  .branding__section--text{
+  .branding__section--form{
+   
     flex: 1;
+    padding: 40px 0;
+    
   }
+  .branding__section--form form{
+   
+    gap: 20px;
+    
+  }
+
+  .branding__section--form form input{
+    width: 70vw;
+    
+  }
+  
+
   
   .branding__section--text{
    height: 300px;
     gap: 10px;
+    flex: 1;
   }
   
 
@@ -832,6 +1048,30 @@ span.img-text:hover {
 }
 
 @media (max-width: 786px) {
+  
+
+   
+   .web__presence--text h1{
+     font-size: 40px;
+     
+   }
+  
+   .web__presence--content{
+  
+gap: 20px;
+   }
+
+  .branding__section--form form input{
+    width: 80vw;
+  }
+  .it__works--cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 10px;
+    gap: 20px;
+   
+    }
+
   .details__text--homepage{
     font-size: 18px;
   }
@@ -958,6 +1198,33 @@ span.img-text:hover {
   }
 }
 @media (max-width: 768px) {
+  .tools__container--serve{
+   
+    width: 500px;
+    height: 500px;
+    
+  }
+  
+  .tools__grid{
+    
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+ 
+  .web__presence{
+    background-color: #041569;
+    color: #fff;
+    padding: 40px 0;
+   }
+   .facebook__box{
+    background-color: #041569;
+    color: #fff;
+   }
+   .linkedin__box{
+    background-color: #fff;
+    color: #041569;
+   }
+
   .owl-carousel .nav-btn{  
     font-size: 30px;
     top: 60px !important;
@@ -967,6 +1234,32 @@ span.img-text:hover {
    } 
 }
 @media (max-width: 600px) {
+  .tools__container--serve{
+   
+    width: 100%;
+    height: 500px;
+    
+  }
+  
+  .tools__grid{
+    
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tools__grid--boxes{
+    height: 300px;
+    width: 100% ;
+   
+    
+  }
+  .facebook__box{
+    background-color: #fff;
+    color: #041569;
+  }
+  .linkedin__box{
+    background-color: #041569;
+    color: #fff;
+  }
+  
   .branding__banner--image{
     width: 150px;
     height: 100px;
@@ -1014,6 +1307,13 @@ span.img-text:hover {
 }
 
 @media (max-width: 576px) {
+  .it__works--cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 10px;
+    gap: 20px;
+   
+    }
   
   .view {
     display: flex;
@@ -1035,6 +1335,13 @@ span.img-text:hover {
   }
 }
 @media (max-width: 480px) {
+
+  .webPresence__feature--grid
+  {
+  
+    grid-template-columns: repeat(1, 1fr);
+   gap: 50px;
+  }
   .hero__section--cards p{
     font-size: 14px;
   }
