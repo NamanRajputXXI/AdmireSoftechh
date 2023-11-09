@@ -222,10 +222,8 @@ span.img-text:hover {
   flex-direction: column;
   gap: 10px;
   padding: 30px 15px;
-
   color: white;
   background-color: #041569;
-
   width: 45%;
 }
 
@@ -383,12 +381,6 @@ span.img-text:hover {
   align-items: center;
   grid-template-columns: repeat(3, 300px);
 }
-/* .brands__container img {
-  max-height:  100px;
-  max-width: 250px;
-
-} */
-
 .choose__us--container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -438,8 +430,7 @@ span.img-text:hover {
   height: 100vh;
   width: 100%;
   padding: 20px;
-  
-  display: flex;
+   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -467,6 +458,43 @@ span.img-text:hover {
 }
 .web__presence--text p{
   font-size: 20px;
+}
+.webApp__afterHeader--grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+}
+.webApp__afterHeader--gridbox{
+  border: 10px solid #041569;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 10px;
+}
+.webApp__deliver--grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.webApp__deliverList{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.webApp__deliver--gridBox{
+  padding: 30px;
+  border: 2px solid rgb(218, 218, 218);
+}
+
+.big-icon{
+  font-size: 50px;
+  font-weight: 900;
+  color: #041569;
+}
+.webApp__deliver--gridBox h5{
+  font-size: 30px;
+  font-weight: 700;
 }
 .tools__grid{
   display: grid;
@@ -557,6 +585,36 @@ width: 100%;
   font-size: 40px;
   color: #041569;
 
+}
+.webApps__banner h5{
+  font-size: 30px;
+  font-weight: 700;
+}
+.webApps__banner p{
+  font-size: 18px;
+  font-weight: 700;
+}
+.webApp__industry--types h1{
+  font-size: 50px;
+  font-weight: 900;
+}
+.webApp__industry--types p{
+  font-size: 18px;
+  font-weight: 700;
+}
+.webApp__industry--box p{
+  font-size: 25px;
+  font-weight: 900;
+}
+.webApp__industry--gridContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.webApp__industry--box{
+  padding: 30px;
+  border: 2px solid rgb(218, 218, 218);
+  
 }
 .offering__cards{
   display: grid;
@@ -907,6 +965,20 @@ padding: 20px ;
 
 
 @media (max-width: 1024px) {
+  .webApp__industry--gridContainer{
+    
+    grid-template-columns: repeat(3, 1fr);
+   
+  }
+  .webApp__deliver--grid{
+    
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+  .webApp__afterHeader--grid{
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); 
+  }
   .offering__cards{
     
     grid-template-columns: repeat(2, 1fr);
@@ -1085,6 +1157,15 @@ gap: 30px;
 }
 
 @media (max-width: 786px) {
+  .webApp__industry--gridContainer{
+    
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+  .webApp__afterHeader--grid{
+
+    grid-template-columns: repeat(2, 1fr); 
+  }
   
   .offering__cards{
     
@@ -1276,6 +1357,11 @@ gap: 20px;
    } 
 }
 @media (max-width: 600px) {
+  .webApp__deliver--grid{
+    
+    grid-template-columns: repeat(1, 1fr);
+   
+  }
   .tools__container--serve{
    
     width: 100%;
@@ -1377,6 +1463,15 @@ gap: 20px;
   }
 }
 @media (max-width: 480px) {
+  .webApp__industry--gridContainer{
+    
+    grid-template-columns: repeat(1, 1fr);
+   
+  }
+  .webApp__afterHeader--grid{
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr); 
+  }
   .brandApp__button--container{
     font-size: 20px;
     flex-direction: column;
