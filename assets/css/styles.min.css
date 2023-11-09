@@ -513,6 +513,9 @@ width: 100%;
   font-weight: 700;
   font-size: 25px;
 }
+.brandApp__img{
+  width: 60%;
+}
 .tools__container--serve h1{
   font-size: 50px;
   font-weight: 900;
@@ -540,6 +543,31 @@ width: 100%;
   justify-content: center;
   align-items: center;
   
+}
+.contactFor__brandApps{
+  background-color: #FFC229;
+  
+}
+.brandApp__button--container{
+  display: flex;
+ gap: 10px;
+}
+.brandApps__offerings h1{
+  font-weight: 900;
+  font-size: 40px;
+  color: #041569;
+
+}
+.offering__cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px 0;
+}
+.offering__cards p{
+  font-size: 20px;
+  font-weight: 700;
+  color: #041569;
 }
 .hero__section--heading{
   display: flex;
@@ -879,6 +907,15 @@ padding: 20px ;
 
 
 @media (max-width: 1024px) {
+  .offering__cards{
+    
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+  }
+  .brandApp__img{
+    width: 100%;
+  }
  
   .webPresence__feature--grid
 {
@@ -1049,7 +1086,12 @@ gap: 30px;
 
 @media (max-width: 786px) {
   
-
+  .offering__cards{
+    
+    grid-template-columns: repeat(1, 1fr);
+    
+    
+  }
    
    .web__presence--text h1{
      font-size: 40px;
@@ -1335,6 +1377,12 @@ gap: 20px;
   }
 }
 @media (max-width: 480px) {
+  .brandApp__button--container{
+    font-size: 20px;
+    flex-direction: column;
+    width: 100%;
+    
+  }
 
   .webPresence__feature--grid
   {
