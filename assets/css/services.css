@@ -1,0 +1,98 @@
+/* .webDev__background{
+    background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+   
+} */
+.webDev__background {
+    
+    background-image: url("../img/webdev_bgImg\ \(1\).jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    align-items: center;
+    color: white;
+}
+.seo__background{
+    background-image: url("../img/seo__bgImage.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.googleAds__background{
+    background-image: url("../img/googleAds__bgImg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    width: 100%;
+    border-bottom: 1px solid white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.graphicDesign__background{
+    background-image: url("../img/graphicDesign__bgImg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.digitalMarketing__background{
+    background-image: url("../img/digitalMarketing__bgImg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.facebookAds__background{
+    background-image: url("../img/linkedinAds__backgroundImage\ \(1\).png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+    background-size: cover;
+    background-attachment: fixed; /* Add this line for parallax effect */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
