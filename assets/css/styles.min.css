@@ -15,6 +15,9 @@
   height: 100px;
   
 }
+.nav-link:hover{
+  font-weight: 700;
+}
 .brands__image2{
   height: 100px;
   
